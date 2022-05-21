@@ -4,16 +4,16 @@ const apple = 15.678,
 const sum = apple + qiwi + watermelon; //1 
 const sumLow = Math.floor(apple) + Math.floor(qiwi) + Math.floor(watermelon); //2
 const sumRound = (Math.round(sum / 100)) * 100; //3
-const discount = (Math.random() * (100 - 1) + 1).toFixed(2) + '%'; //4
+const discount = (Math.random() * (99)).toFixed(2) + '%'; //4
 const amountCash = 500;
 const sumBolean = sumLow % 2 === 0;
 const changeResult = (amountCash - sum); //5
 const averageValue = (sum / 3).toFixed(2); //6  
-const randomDiscount = (Math.random() * (99 - 1) + 1).toFixed(0); //7s
+const randomDiscount = (Math.random() * (99)).toFixed(0); //7s
 const discountPrice = (sum - (sum * (randomDiscount * 0.01))).toFixed(2);
 const netProfitNumbers = (sum / 2).toFixed(0);
 const netProfitPercent = ((randomDiscount / 100) * sum).toFixed(0);
-const netProfit = netProfitPercent - netProfitNumbers;
+const netProfit = netProfitNumbers - netProfitPercent;
 const minNumb = Math.min(apple, qiwi, watermelon);
 const maxNumb = Math.max(apple, qiwi, watermelon);
 
