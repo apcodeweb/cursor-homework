@@ -1,34 +1,22 @@
 const apple = 15.678;
 const qiwi = 123.965;
 const watermelon = 90.2345;
+
+
 const sum = apple + qiwi + watermelon;
-
 const sumLow = Math.floor(apple) + Math.floor(qiwi) + Math.floor(watermelon);
-
 const sumRound = (Math.round(sum / 100)) * 100;
-
 const discount = (Math.random() * (99)).toFixed(2) + '%';
-
 const amountCash = 500;
-
 const sumBolean = sumLow % 2 === 0;
-
 const changeResult = (amountCash - sum);
-
 const averageValue = (sum / 3).toFixed(2);
-
 const randomDiscount = (Math.random() * (99)).toFixed(0);
-
 const discountPrice = (sum - (sum * (randomDiscount * 0.01))).toFixed(2);
-
 const netProfitNumbers = (sum / 2).toFixed(0);
-
 const netProfitPercent = ((randomDiscount / 100) * sum).toFixed(0);
-
 const netProfit = netProfitNumbers - netProfitPercent;
-
 const minNumb = Math.min(apple, qiwi, watermelon);
-
 const maxNumb = Math.max(apple, qiwi, watermelon);
 
 
