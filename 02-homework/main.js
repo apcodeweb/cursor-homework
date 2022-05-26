@@ -24,7 +24,7 @@ do {
 
 }
 
-let skipEvenOdd = confirm('Skip even numbers?');
+const skipEvenOdd = confirm('Skip even numbers?');
 N = +N;
 M = +M;
 
