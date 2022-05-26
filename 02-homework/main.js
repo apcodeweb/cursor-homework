@@ -6,12 +6,13 @@ while (!(N % 1 === 0 && Number.isInteger(parseInt(N)))) {
     N = prompt('Enter the first number: ', '');
     alert('Keep using INTEGERS only');
 }
-
-do {
+while (!(M % 1 === 0 && Number.isInteger(parseInt(M)) && +M > +N)) {
     M = prompt('Enter the second number: ', '');
-
-} while (!(M % 1 === 0 && Number.isInteger(parseInt(M)) && M > N)) {
-    alert('Now we are going to count even/odd numbers')
+    if (+M > +N) {
+        alert('Next step, count even/odd numbers')
+    } else {
+        alert('Second number must be greater than first and not equal!')
+    }
 }
 N = +N;
 M = +M;
