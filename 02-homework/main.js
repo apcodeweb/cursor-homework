@@ -27,19 +27,15 @@ do {
 let skipEvenOdd = confirm('Skip even numbers?');
 N = +N;
 M = +M;
+
 let sum = 0;
-if (skipEvenOdd) {
 
-    for (let i = N; i <= M; i++) {
-        if ((i % 2) !== 0) {
-            sum = sum + i;
-        }
+for (let i = N; i <= M; i++) {
+    if (skipEvenOdd && i % 2 === 0) {
+        continue;
+    } else {
+        sum += i;
+        console.log(sum);
     }
-    document.writeln(`Odds numbers only: ${sum}`);
-} else {
-
-    for (let i = N; i <= M; i++) {
-        sum = sum + i;
-    }
-    document.writeln(`Even numbers only: ${sum}`);
 }
+document.writeln(`result: ${sum}`);
