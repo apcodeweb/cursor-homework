@@ -15,8 +15,8 @@ console.log(getMaxDigitLoop(23214356));
 
 
 
-const getPercent = (sum, percent) => sum - (percent / 100) * sum;
-console.log(getPercent(345, 50));
+const getPercent = (sum) => sum - (19.5 / 100) * sum;
+console.log(getPercent(100));
 
 
 
@@ -59,7 +59,7 @@ console.log(generatePassword());
 console.log(generatePassword(4));
 
 document.writeln(`1.Найбiльше число з 123456789 = ${getMaxDigitLoop(123456789)} <hr>`);
-document.writeln(`2.Залишок після оплати податку(18) з 500 = ${getPercent(500,18)} <hr>`);
+document.writeln(`2.Залишок після оплати податку(19.5) з 500 = ${getPercent(500)} <hr>`);
 document.writeln(`3.Формотуэмо з "vOrOna",так щоб перша буква була великою,а всi iншi з маленькоi: ${capitalaziString('vorona')} <hr>`);
 document.writeln(`4.Видалимо букву "a" зi cлова "warcraft": ${deleteLetters("a", "warcraft")} <hr>`);
 document.writeln(`5.Чи є речення "no lemon, no melon" паліндромом? - ${palindrome("no lemon, no melon")} <hr>`);
