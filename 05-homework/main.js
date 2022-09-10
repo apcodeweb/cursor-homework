@@ -13,7 +13,7 @@ document.writeln(`GetRandomNumber(15, 1, 100) = ${getRandomNumber(15,1,10)}<br><
 
 
 const getAverage = (...numbers) => {
-    let newArr = numbers.filter(function(el) {
+    let newArr = numbers.filter((el) => {
         return Number.isInteger(el);
     });
     let average = newArr.reduce((a, b) => (a + b));
@@ -38,14 +38,14 @@ document.writeln(`Skip even numbers in this set of numbers(1,2,3,4,5,6,7) = ${fi
 
 
 const countPositiveNumbers = (...numbers) => {
-    let positiveNumb = numbers.filter(function(el) {
+    let positiveNumb = numbers.filter((el) => {
         return el > 0;
     });
-    let summary = positiveNumb.reduce((a, b) => (a + b));
+    let summary = positiveNumb.length
     return summary;
 }
-console.log(countPositiveNumbers(-1, 0, -24, 1, 2, 3, 4, 5, 6));
-document.writeln(`Sum of all numbers which > 0 (-1, 0, -24, 1, 2, 3, 4, 5, 6) =${countPositiveNumbers(-1, 0, -24, 1, 2, 3, 4, 5, 6)}<br> <br>`)
+console.log(countPositiveNumbers(-1, 0, -24, 2, 3, 4, 5, 6));
+document.writeln(`Sum of all numbers which > 0 (-1, 0, -24,  2, 3, 4, 5, 6) =${countPositiveNumbers(-1, 0, -24,  2, 3, 4, 5, 6)}<br> <br>`)
 
 
 
